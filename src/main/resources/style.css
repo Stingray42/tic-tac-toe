@@ -1,0 +1,116 @@
+.background {
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.radio-button {
+    -fx-text-fill: white;
+}
+
+.radio-button .radio  {
+    -fx-background-color: transparent;
+    -fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+    -fx-background-insets: 0;
+
+    -fx-border-radius: 1.0em;
+    -fx-border-width: 2px;
+    -fx-border-color: white;
+
+    -fx-padding: 3px; /* padding from outside edge to the inner dot */
+}
+
+.radio-button .dot {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+    -fx-padding: 4px; /* radius of the inner dot when selected */
+}
+
+.radio-button:hover .radio {
+    -fx-background-color: #333333;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: transparent;
+}
+
+.radio-button:disabled {
+    -fx-opacity: 1.0;
+}
+
+.radio-button:armed .dot {
+    -fx-background-color: white;
+}
+
+.radio-button:pressed .dot {
+    -fx-background-color: transparent;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: white;
+}
+
+.newGameBtn {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-background-insets: 0;
+}
+
+.newGameBtn:hover {
+    -fx-background-color: #333333;
+}
+
+.newGameBtn:disabled {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-opacity: 1.0;
+}
+
+.gridCellBtn {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 0px;
+    -fx-text-fill: white;
+}
+
+.gridCellBtn:disabled {
+    -fx-opacity: 1.0;
+}
+
+.btn1 {
+    -fx-border-width: 0 1 1 0;
+}
+
+.btn2 {
+    -fx-border-width: 0 1 1 1;
+}
+
+.btn3 {
+    -fx-border-width: 0 0 1 1;
+}
+
+.btn4 {
+    -fx-border-width: 1 1 1 0;
+}
+
+.btn5 {
+    -fx-border-width: 1 1 1 1;
+}
+
+.btn6 {
+    -fx-border-width: 1 0 1 1;
+}
+
+.btn7 {
+    -fx-border-width: 1 1 0 0;
+}
+
+.btn8 {
+    -fx-border-width: 1 1 0 1;
+}
+
+.btn9 {
+    -fx-border-width: 1 0 0 1;
+}

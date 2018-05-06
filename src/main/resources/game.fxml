@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="420.0" maxWidth="320.0" minHeight="420.0" minWidth="320.0" prefHeight="420.0" prefWidth="320.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myproject.tictactoe.Controller">
+    <children>
+      <StackPane layoutX="10.0" layoutY="110.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="110.0">
+         <children>
+            <Canvas fx:id="canvas" height="300.0" width="300.0" />
+              <GridPane fx:id="grid" disable="true" prefHeight="500.0" prefWidth="500.0" styleClass="grid">
+                  <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                      <Button minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#step" prefHeight="100.0" prefWidth="100.0" text="\\u0000">
+                          <GridPane.margin>
+                              <Insets />
+                          </GridPane.margin>
+                          <font>
+                              <Font name="System Bold" size="48.0" />
+                          </font>
+                         <styleClass>
+                            <String fx:value="gridCellBtn" />
+                            <String fx:value="btn1" />
+                         </styleClass>
+                      </Button>
+                      <Button minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#step" prefHeight="100.0" prefWidth="100.0" text="\\u0000" GridPane.columnIndex="1">
+                          <font>
+                              <Font name="System Bold" size="48.0" />
+                          </font>
+                          <styleClass>
+                              <String fx:value="gridCellBtn" />
+                              <String fx:value="btn2" />
+                          </styleClass>
+                      </Button>
+                      <Button minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#step" prefHeight="100.0" prefWidth="100.0" text="\\u0000" GridPane.columnIndex="2">
+                          <font>
+                              <Font name="System Bold" size="48.0" />
+                          </font>
+                          <styleClass>
+                              <String fx:value="gridCellBtn" />
+                              <String fx:value="btn3" />
+                          </styleClass>
+                      </Button>
+                      <Button minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#step" prefHeight="100.0" prefWidth="100.0" text="\\u0000" GridPane.rowIndex="1">
+                          <font>
+                              <Font name="System Bold" size="48.0" />
+                          </font>
+                          <styleClass>
+                              <String fx:value="gridCellBtn" />
+                              <String fx:value="btn4" />
+                          </styleClass>
+                      </Button>
+                      <Button minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#step" prefHeight="100.0" prefWidth="100.0" text="\\u0000" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                          <font>
+                              <Font name="System Bold" size="48.0" />
+                          </font>
+                          <styleClass>
+                              <String fx:value="gridCellBtn" />
+                              <String fx:value="btn5" />
+                          </styleClass>
+                      </Button>
+                      <Button minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#step" prefHeight="100.0" prefWidth="100.0" text="\\u0000" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                          <font>
+                              <Font name="System Bold" size="48.0" />
+                          </font>
+                          <styleClass>
+                              <String fx:value="gridCellBtn" />
+                              <String fx:value="btn6" />
+                          </styleClass>
+                      </Button>
+                      <Button minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#step" prefHeight="100.0" prefWidth="100.0" text="\\u0000" GridPane.rowIndex="2">
+                          <font>
+                              <Font name="System Bold" size="48.0" />
+                          </font>
+                          <styleClass>
+                              <String fx:value="gridCellBtn" />
+                              <String fx:value="btn7" />
+                          </styleClass>
+                      </Button>
+                      <Button minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#step" prefHeight="100.0" prefWidth="100.0" text="\\u0000" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                          <font>
+                              <Font name="System Bold" size="48.0" />
+                          </font>
+                          <styleClass>
+                              <String fx:value="gridCellBtn" />
+                              <String fx:value="btn8" />
+                          </styleClass>
+                      </Button>
+                      <Button minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#step" prefHeight="100.0" prefWidth="100.0" text="\\u0000" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                          <font>
+                              <Font name="System Bold" size="48.0" />
+                          </font>
+                          <styleClass>
+                              <String fx:value="gridCellBtn" />
+                              <String fx:value="btn9" />
+                          </styleClass>
+                      </Button>
+                  </children>
+              </GridPane>
+         </children>
+      </StackPane>
+        <AnchorPane fx:id="panel" prefHeight="100.0" prefWidth="300.0" styleClass="panel" AnchorPane.bottomAnchor="310.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <FlowPane alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <RadioButton fx:id="minimax" mnemonicParsing="false" onAction="#selectAI" selected="true" styleClass="selector" text="Minimax">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                            <toggleGroup>
+                                <ToggleGroup fx:id="aiSelect" />
+                            </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="alphaBeta" mnemonicParsing="false" onAction="#selectAI" styleClass="selector" text="AlphaBeta" toggleGroup="$aiSelect">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </RadioButton>
+                        <RadioButton fx:id="pattern" mnemonicParsing="false" onAction="#selectAI" styleClass="selector" text="Pattern" toggleGroup="$aiSelect">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </RadioButton>
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </FlowPane>
+                <FlowPane alignment="CENTER_RIGHT" layoutX="200.0" layoutY="5.0" prefHeight="100.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <RadioButton fx:id="cross" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#selectSymbol" selected="true" styleClass="selector" text="Cross">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="symbolSelect" />
+                            </toggleGroup>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </RadioButton>
+                        <RadioButton fx:id="zero" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#selectSymbol" text="Zero" toggleGroup="$symbolSelect">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </RadioButton>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </FlowPane>
+                <FlowPane alignment="CENTER" prefHeight="100.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Button fx:id="newGameBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#newGame" prefHeight="48.0" prefWidth="48.0" styleClass="newGameBtn" text="Play" />
+                    </children>
+                </FlowPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
